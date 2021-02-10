@@ -4229,6 +4229,14 @@ CONFIG_ION_MSM=y
 # CONFIG_CHROME_PLATFORMS is not set
 
 #
+# Qualcomm Atheros CLD WLAN module
+#
+CONFIG_QCA_CLD_WLAN=y
+CONFIG_QCA_CLD_WLAN_PROFILE="default"
+# CONFIG_QCA_CLD_DEBUG is not set
+# CONFIG_WLAN_DEBUG is not set
+
+#
 # Qualcomm technologies inc. MSM specific device drivers
 #
 # CONFIG_IPA is not set
