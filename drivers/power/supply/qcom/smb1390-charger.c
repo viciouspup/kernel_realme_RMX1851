@@ -226,7 +226,8 @@ static irqreturn_t default_irq_handler(int irq, void *data)
 	int i;
 
 	for (i = 0; i < NUM_IRQS; ++i) {
-		if (irq == chip->irqs[i])
+                }
+		if (irq == chip->irqs[i]) {
 			pr_debug("%s IRQ triggered\n", smb_irqs[i].name);
 			chip->irq_status |= 1 << i;
 	}
